@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(cors())
 
 // connect to MongoDB
-const url = config.get("mongoURI");
+const url = process.env.MONGO_URI;
 mongoose.connect(url,
     { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
     .then(() => console.log("MongoDB connected"))
