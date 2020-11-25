@@ -9,7 +9,7 @@ const swaggerDocument = require('./swagger.json');
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors())
+app.use(cors());
 
 // connect to MongoDB
 const url = process.env.MONGO_URI;
