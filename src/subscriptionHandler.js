@@ -71,11 +71,11 @@ function sendPushNotification(req, res) {
       .catch(err => {
         console.log(err);
       });
-      res.status(202).json({
-        code: 202,
-        message: `Push notifications successfully for ${clients.length} clients with project_type ${project_type}`
-      });
     })
+    res.status(202).json({
+      code: 202,
+      message: `Push notifications successfully for ${clients.length} clients with project_type ${project_type}`
+    });
   })
 }
 
