@@ -2,7 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const subscriptionHandler = require('./subscriptionHandler');
-const config = require("config");
 const mongoose = require('mongoose');
 
 const swaggerUi = require('swagger-ui-express')
