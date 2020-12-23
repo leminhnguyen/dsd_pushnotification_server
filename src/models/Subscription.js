@@ -8,9 +8,16 @@ const subscriptionSchema = Schema({
   project_type: {
     type: Schema.Types.String,
     required: true,
-    enum: ['DE_DIEU', 'CAY_TRONG', 'CHAY_RUNG', 'LUOI_DIEN']
+    default: null
+  },
+  userId: {
+    type: Schema.Types.String,
+    // required: true,
+    default: null
   },
   subscription: {
+    type: Schema.Types.Mixed,
+    default: null
   },
   hash: {
     type: Schema.Types.String
